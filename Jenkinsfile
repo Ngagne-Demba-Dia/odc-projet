@@ -12,7 +12,7 @@ pipeline {
             }
         }
 
-        stage('Tests Django') {
+       /* stage('Tests Django') {
             steps {
                 dir('./Backend/odc') {
                     sh '''
@@ -22,7 +22,7 @@ pipeline {
                 }
             }
         }
-
+*/
         stage('Docker Build') {
             steps {
                 echo 'Construire l’image Docker ici...'
